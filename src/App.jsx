@@ -4,7 +4,8 @@ import LandingPage from "./paginas/LandingPage";
 import Login from "./layout/Login";
 import FormularioLogin from "./paginas/FormularioLogin";
 import Dashboard from "./layout/Dashboard";
-
+import FundamentoUseState from "./paginas/FundamentoUseState";
+import FundamentoUseEffect from "./paginas/FundamentoUseEffect";
 function App() {
   const [count, setCount] = useState(0)
 
@@ -20,6 +21,8 @@ function App() {
       </Route>
 
       <Route path="/fundamentos" element={<Dashboard />}>
+      <Route path="usestate" element={<FundamentoUseState />} />
+          <Route path="useffect" element={<FundamentoUseEffect />} />
       </Route>
 
     </Routes>
